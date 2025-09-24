@@ -1,0 +1,9 @@
+Nombre del equipo: VMPruebas
+Modelo:  Intel(R) Celeron(R) N5100 @ 1.10GHz
+Núcleos: 2
+RAM: 2010780
+Sistema operativo:  Ubuntu 22.04.5 LTS
+
+Alumno: Agustin Casal
+División: 211
+Turno: tarde
