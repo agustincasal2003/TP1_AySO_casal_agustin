@@ -1,0 +1,390 @@
+echo -e "Hola buenos días\nSoy tu asistente\nSolo los días lunes y martes" > archivo1.txt
+echo -e "Lunes\nMartes\nMiercoles" > archivo2.txt
+grep "días" archivo1.txt
+grep -n "días" archivo1.txt
+grep -E "lunes|martes|días" archivo1.txt
+grep "martes" archivo1.txt archivo2.txt
+grep -i "martes" archivo1.txt archivo2.txt
+echo "Miércoles" >> archivo2.txt
+cat archivo2.txt
+rm archivo1.txt archivo2.txt
+ls
+echo -e "Hola buenos días\nSoy tu asistente\nSolo los días lunes y martes" > archivo1.txt
+echo -e "Lunes\nMartes\nMiércoles" > archivo2.txt
+grep "días" archivo1.txt
+rm archivo1.txt archivo2.txt
+ls
+cat > archivo1.txt
+Hola buenos días
+Soy tu asistente
+Solo los días lunes y martes
+ls
+rm archivo1.txt archivo2.txt
+rm archivo1.txt
+ls
+exit
+cd ~/Documentos
+mkdir clase4
+cd clase4
+cat > archivo1.txt
+cat > archivo2.txt
+cat > archivo3.txt
+cat > archivo4.txt
+ls
+mkdir documentos
+ls
+ls -l archivo1.txt
+> archivo1.txt
+> archivo2.txt
+> archivo3.txt
+> archivo4.txt
+ls -l
+cat > archivo1.txt
+cat > archivo2.txt
+grep dias archivo1.txt
+grep -n dias archivo1.txt
+estudiante@DESKTOP-BHAMNSV MINGW64 /c/SO/repogit
+$ cd UTN-FRA_SO_Vagrant/VagrantFiles/1_equipo
+estudiante@DESKTOP-BHAMNSV MINGW64 /c/SO/repogit/UTN-FRA_SO_Vagrant/VagrantFiles/1_equipo (master)
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/jammy64' version '20241002.0.0' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+==> default: Forwarding ports...
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+==> default: Setting hostname...
+==> default: Configuring and enabling network interfaces...
+==> default: Mounting shared folders...
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+==> default: Machine 'default' has a post `vagrant up` message. This is a message
+==> default: from the creator of the Vagrantfile, and not from Vagrant itself:
+==> default:
+==> default:   ###########################################################################
+==> default:   #
+==> default:   # Para Ingresar a la VM puede usar cualquiera de las dos opciones  Memory usage:            10%
+Expanded Security Maintenance for Applications is not enabled.
+0 updates can be applied immediately.
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+New release '24.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+Last login: Tue Sep 23 03:16:26 2025 from 10.0.2.2
+vagrant@VMPruebas:~$ cd ~/Documentos
+-bash: cd: /home/vagrant/Documentos: No such file or directory
+vagrant@VMPruebas:~$ cd ~/Documentos
+-bash: cd: /home/vagrant/Documentos: No such file or directory
+vagrant@VMPruebas:~$ mkdir clase4
+vagrant@VMPruebas:~$ cd clase4
+vagrant@VMPruebas:~/clase4$ cat > archivo1.txt
+Contenido de archivo1
+vagrant@VMPruebas:~/clase4$ cat > archivo2.txt
+Contenido de archivo2
+vagrant@VMPruebas:~/clase4$ cat > archivo3.txt
+Contenido de archivo3
+vagrant@VMPruebas:~/clase4$ cat > archivo4.txt
+Contenido de archivo4
+vagrant@VMPruebas:~/clase4$ ls
+archivo1.txt  archivo2.txt  archivo3.txt  archivo4.txt
+vagrant@VMPruebas:~/clase4$ mkdir documentos
+vagrant@VMPruebas:~/clase4$ ls
+archivo1.txt  archivo2.txt  archivo3.txt  archivo4.txt  documentos
+vagrant@VMPruebas:~/clase4$ ls -l archivo1.txt
+-rw-rw-r-- 1 vagrant vagrant 22 Sep 23 15:31 archivo1.txt
+vagrant@VMPruebas:~/clase4$ > archivo1.txt
+vagrant@VMPruebas:~/clase4$ > archivo2.txt
+vagrant@VMPruebas:~/clase4$ > archivo3.txt
+vagrant@VMPruebas:~/clase4$ > archivo4.txt
+vagrant@VMPruebas:~/clase4$ ls -l
+total 4
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 23 15:38 archivo1.txt
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 23 15:39 archivo2.txt
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 23 15:39 archivo3.txt
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 23 
+grep -o dias archivo1.txt | wc -l
+cat archivo1.txt
+ls archivo1.txt
+ls archivo2.txt
+ls archivo3.txt
+ls archivo4.txt
+ls -d documentos/
+cat > archivo1.txt
+cat > archivo2.txt
+grep dias archivo1.txt
+grep -n dias archivo1.txt
+grep -c dias archivo1.txt
+grep martes archivo1.txt | grep Miercoles archivo2.txt
+grep -i martes *
+> archivo1.txt
+> archivo2.txt
+> archivo3.txt
+ls archivo1.txt archivo2.txt archivo3.txt archivo4.txt
+ls -l archivo1.txt archivo2.txt archivo3.txt archivo4.txt
+ls -d documentos/
+exit
+whoami
+pwd
+ls -l
+cd clase4
+pwd
+ls -l
+mkdir facturas pedidos
+ls -l
+tree
+snap install tree
+sudo apt install tree
+sudo snap install tree
+tree
+mkdir -p clientes/{facturas,pedidos}
+tree
+mkdir -p {clientes,prooveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,prooveedores}/{facturas,pedidos}
+tree
+mkdir -p casal1/contactos/{clientes,prooveedores}/{facturas,pedidos}
+tree
+mkdir -p casal2/{mama/hijo{1..3},papa/{hijo1..3},ahijado}}
+tree
+rm -r casal2
+mkdir -p casal2/{mama/hijo{1..3},papa/{hijo{1
+..3},ahijado}}
+mkdir -p casal2/{mama/hijo{1..3},papa/{hijo{1
+..3},ahijado}}
+tree
+rm -r casal2
+mkdir -p casal2/{mama/hijo{1..3},papa/{hijo{1
+..3},ahijado}}
+tree
+rm -r casal2
+mkdir -p casal_2/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+tree
+id
+who
+w
+last
+cat /etc/passwd
+grep -i vagrant /etc/passwd
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo grep -i vagrant /etc/shadow
+cat /etc/group
+sudo su
+groupadd alumnos
+sudo groupadd alumnos
+grep -i alumnos /etc/group
+sudo useradd -m -s /bin/bash -c "usuario pepe" -G alumnos pepe
+grep pepe /etc/passwd
+ls -l /home
+cd /home/pepe
+sudo cd /home/pepe
+sudo passwd pepe
+su - pepe
+sudo usermod -aG sudo pepe
+cd ..
+pwd
+ls -l
+cd repogit
+ls -l
+pwd
+git clone git@github.com:agustincasal2003/TP1_AySO_casal_agustin.git
+ls -l
+ssh-keygen
+ls -l .ssh/
+ssh keygen -t ed25519
+ssh-keygen -t ed25519
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com:agustincasal2003/TP1_AySO_casal_agustin.git
+ssh -t git@github.com:agustincasal2003/TP1_AySO_casal_agustin.git
+exit
+ssh-keygen -t ed25519
+ed25519
+ls -l .ssh/
+cat .ssh/id_ed25519.pub
+ssh -T git@github.com:agustincasal2003/TP1_AySO_casal_agustin.git
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEQI5wkySJGwOJuEgVYq3wlJWXiN03jLZ5JdLE0vpBAQ vagrant@VMPruebas
+cd repogit
+ls -l
+git clone git@github.com:agustincasal2003/TP1_AySO_casal_agustin.git
+cat /etc/os-release
+grep HOME_URL /etc/os-release
+grep HOME_URL /etc/os-release > datos_url.txt
+cat datos_url.txt
+whoami
+echo "Usuario:$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git config --global user.email "independientecasal@gmail.com"
+git config --global user.name "agustincasal2003"
+git add .
+git commit -m "ADD: agregado el ejercicio sobre datos_usuario.txt"
+ls -a
+cd TPL_AySD_casal_agustin
+cd TPL_AySO_casal_agustin
+cd TP1_AySO_casal_agustin
+ls -a
+git add .
+git commit -m "ADD: agregado el ejercicio sobre datos_usuario.txt"
+cd TP1_AySO_casal_agustin
+CD tp1_AySO_casal_agustin
+git status
+ls
+ls ../
+mv ../datos_usuario.txt ../datos_url.txt .
+git add datos_usuario.txt datos_url.txt
+git commit -m "ADD: ejercicios de usuario y URL"
+git push
+mv datos.url datos_url.txt
+git status
+exit
+find ~ -name datos_usuarios.txt
+cd /home/vagrant/datos_usuario.txt
+cd ~
+pwd
+ls
+cd ~/repogit
+ls
+find ~/TP1_AySO_casal_agustin -name datos_usuarios.txt
+cd ~/TP1_AySO_casal_agustin
+pwd
+find ~ -type f -name datos_usuarios.txt
+grep "model name" /proc/cpuinfo | head -n1 > datos_usuarios.txt
+cat datos_usuarios.txt
+grep "model name" /proc/cpuinfo | head -n1 | cut -d: -f2 > datos_usuarios.txt
+cat datos_usuarios.txt
+grep "model name" /proc/cpuinfo | head -n1 | cut -d: -f2 > datos_usuarios.txt
+cd ~/repogit/TP1_AySO_casal_agustin
+pwd
+cat <<EOF >> README.md
+Alumno: Agustin casal
+División: 211
+Turno: tarde
+EOF
+
+cat README.md
+git add README.md
+git add datos_usuarios.txt
+ls
+mv datos_usuario.txt datos_usuarios.txt
+cat datos_usuarios.txt
+cd ~/repoGit/TPI_AySO_casal_agustin
+cd ~/repogit/TP1_AySO_casal_agustin
+pwd
+cat <<EOF > datos_usuarios.txt
+Nombre del equipo: $(hostname)
+Modelo: $(grep "model name" /proc/cpuinfo | head -n1 | cut -d ":" -f2)
+Núcleos: $(grep -c ^processor /proc/cpuinfo)
+RAM: $(grep MemTotal /proc/meminfo | awk '{print $2}')
+Sistema operativo: $(hostnamectl | grep "Operating System" | cut -d ":" -f2)
+
+Alumno: Agustin Casal
+División: 211
+Turno: tarde
+EOF
+
+cat datos_usuarios.txt
+git add datos_usuarios.txt
+git commit -m "ADD: datos_usuarios.txt completo lo tuve que corregir"
+git push
+cd ~
+pwd
+mkdir -p {materia1,materia2}/uni{1..3} mk -p {materia1,materia2}/{uni1,uni2,uni3}
+tree ~
+exit
+pwd
+ls -l /home
+cd /home/pepe
+ls -l /home/pepe
+su - pepe
+pwd
+chown vagrant:vagrant /home/pepe/texto_pepe.txt
+sudo chown vagrant:vagrant /home/pepe/texto_pepe.txt
+sudo ls -l /home/pepe
+pwd
+ls -l
+mkdir clase5
+ls -l
+cd clase5
+ls -l
+touch practica1.txt
+touch practica2.txt
+ls -l
+chmod 600 practica1.txt
+ls -l
+chmod 444 practica2.txt
+ls -l
+"echo nueva linea" >>practica2.txt
+chmod 644 practica2.txt
+ls -l
+"echo nueva linea" >>practica2.txt
+echo "nueva linea" >>practica2.txt
+cat practica2.txt
+cd ..
+ls -l
+chmod -R 777 clase5/
+ls -l
+cd clase5
+ls -l
+cd ..
+ls -l
+chmod 775 -R clase5/
+ls -l
+pwd
+mkdir clase6
+ls -l
+cd clase6
+ls -l
+pwd
+echo pwd
+echo pwd > script1
+ls -l
+cat scrpt1
+cat script1
+bash script1
+echo whoami >> script1
+cat script1
+bash script1
+vim script2.sh
+cat script2.sh
+./script2.sh
+ls -l
+chmod 764 script2.sh
+ls -l
+./script2.sh
+vim script3.sh
+chmod 764 script3.sh
+ls -l
+./script3.sh
+cd dir1
+ls -l
+cd ..
+ls -l
+exit
+nano script_dir.sh
+vim  script_dir.sh
+chmod 764 script_dir.sh
+ls -l
+git add . 
+git commit -m "ADD: Añadiendo script" 
+git push
+git init
+git add . 
+git commit -m "ADD: Añadiendo script" 
+git push 
+rm -rf .git
+cd TP1_AySO_casal_agustin
+cd repogit/TP1_AySO_casal_agustin
+git add .
+git commit -m "ADD: Archivos hasta el punto tuve un error por eso voy a cambiar los comandos"
+git remote add origin https://github.com/agustincasal2003/TP1_AySO_casal_agustin.git
+git add .
+git commit -m "ADD: Añadiendo script" 
+git push 
+history -a 
